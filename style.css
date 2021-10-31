@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: hsl(226, 43%, 10%);
+}
+.active{
+  color: #ffffff;
+}
+.time-tracking {
+  padding-top: 81px;
+  padding-bottom: 81px;
+  font-family: "Rubik", sans-serif;
+}
+/* heading */
+.heading {
+  margin-left: auto;
+  margin-right: auto;
+  width: 327px;
+  height: 203px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+}
+.profile {
+  height: 133px;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border: 3px solid white;
+  border-radius: 50px;
+  margin-right: 16px;
+  margin-left: 28px;
+}
+.profile-intro {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(236, 100%, 87%);
+}
+.profile-name {
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 5px;
+  color: hsl(255deg 86% 97%);
+}
+.lastname-firstname {
+  display: flex;
+}
+.lastname {
+  margin-left: 8px;
+}
+.list-time {
+  display: flex;
+  justify-content: center;
+  color: hsl(236, 100%, 87%);
+  padding-top: 8px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.list-time-type:hover {
+  cursor: pointer;
+  color: white;
+}
+.list-time-type.weekly {
+  margin-left: 58px;
+  margin-right: 50px;
+}
+/* activities */
+.activities-time {
+  width: 327px;
+  height: 160px;
+  margin-top: 24px;
+}
+/* work */
+.work-time {
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work-time::before {
+  content: "";
+  display: block;
+  background-image: url(./images/icon-work.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position-x: 93%;
+  background-position-y: -13%;
+}
+.time-tracking-info {
+  width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 38px;
+  border-radius: 20px;
+  top: 0;
+  padding: 30px 24px 0;
+  z-index: 0;
+}
+.blackground {
+  border-radius: 20px;
+  position: absolute;
+  background-color: hsl(235, 46%, 20%);
+  width: 327px;
+  height: 122px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.blackground:hover {
+  cursor: pointer;
+  background-color: hsl(236deg 40% 35%);
+}
+.head-activity {
+  color: white;
+  font-size: 18px;
+  font-family: 500;
+  margin: 0;
+}
+.ellipsis {
+  color: hsl(236, 100%, 87%);
+  font-size: 8px;
+  pointer-events: all;
+}
+.ellipsis:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+.time-work,
+.time-play,
+.time-study,
+.time-exercise,
+.time-social,
+.time-self-care {
+  font-size: 25px;
+  font-weight: 300;
+  color: white;
+  margin-top: 16px;
+}
+.last-week-work,
+.last-week-play,
+.last-week-study,
+.last-week-exercise,
+.last-week-social,
+.last-week-self-care {
+  color: hsl(236, 100%, 87%);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+.head-activity-ellipsis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+.time-last-week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+/* play */
+.play-time {
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.play-time::before {
+  content: "";
+  display: block;
+  background-image: url(./images/icon-play.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position-x: 93%;
+  background-position-y: -13%;
+}
+/* study */
+.study-time {
+  background-color: hsl(348, 100%, 68%);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.study-time::before {
+  content: "";
+  display: block;
+  background-image: url(./images/icon-study.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position-x: 93%;
+  background-position-y: -10%;
+}
+/* exercise */
+.exercise-time {
+  background-color: hsl(145, 58%, 55%);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.exercise-time::before {
+  content: "";
+  display: block;
+  background-image: url(./images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position-x: 93%;
+  background-position-y: -3%;
+}
+/* social */
+.social-time {
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-time::before {
+  content: "";
+  display: block;
+  background-image: url(./images/icon-social.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position-x: 93%;
+  background-position-y: -18%;
+}
+/* Self Care */
+.self-care-time {
+  background-color: hsl(43, 84%, 65%);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.self-care-time::before {
+  content: "";
+  display: block;
+  background-image: url(./images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position-x: 93%;
+  background-position-y: -16%;
+}
+/* Desktop 1440px */
+@media (min-width: 1440px) {
+  .time-tracking {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    max-width: 100vw;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /* heading */
+  .heading {
+    width: 255px;
+    height: 518px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .profile {
+    height: 354px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 28px;
+  }
+  .profile-image {
+    width: 84px;
+    height: 84px;
+    border: 4px solid white;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 32px;
+  }
+  .profile-intro {
+    font-size: 18px;
+    margin-top: 42px;
+  }
+  .name {
+    padding-left: 4px;
+  }
+  .profile-name {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .lastname-firstname {
+    display: flex;
+    flex-direction: column;
+  }
+  .lastname {
+    margin-left: 0;
+  }
+  .list-time {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 32px;
+  }
+  .list-time-type {
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+  .list-time-type:hover {
+    cursor: pointer;
+    color: white;
+  }
+  .list-time-type:focus {
+    cursor: pointer;
+    color: white;
+  }
+  .list-time-type.weekly {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /*activities  */
+  .activities-time {
+    width: 255px;
+    height: 244px;
+    margin-top: 0;
+  }
+  .activities {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  /* work */
+  .work-time {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  .work-time::before {
+    background-position-y: -7%;
+  }
+  .time-tracking-info {
+    width: 255px;
+    margin-top: 45px;
+    border-radius: 20px;
+    padding: 32px 28px 0;
+    position: relative;
+    top: 0;
+    z-index: 0;
+  }
+
+  .blackground {
+    border-radius: 20px;
+    position: absolute;
+    background-color: hsl(235, 46%, 20%);
+    width: 255px;
+    height: 199px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .time {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .last-week {
+    margin-top: 20px;
+  }
+  .time-last-week {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* play */
+  .play-time {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  .play-time::before {
+    background-position-y: -3%;
+  }
+  /* Study */
+  .study-time {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  /* Exercise */
+  .exercise-time {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  .exercise-time {
+    margin-top: 30px;
+  }
+  .exercise-time::before {
+    background-position-y: -2%;
+  }
+  /* Social */
+  .social-time {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  .social-time::before {
+    background-position-y: -10%;
+  }
+  /* Self Care */
+  .self-care-time {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  .self-care-time::before {
+    background-position-y: -5%;
+  }
+}

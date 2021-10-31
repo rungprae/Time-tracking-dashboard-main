@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="time-tracking">
+      <!-- heading -->
+      <div class="heading">
+        <div class="profile">
+          <img
+            class="profile-image"
+            rel="image a person"
+            src="./images/image-jeremy.png"
+          />
+          <div class="name">
+            <div class="profile-intro">Report for</div>
+            <div class="lastname-firstname">
+              <div class="profile-name">Jeremy</div>
+              <div class="profile-name lastname">Robson</div>
+            </div>
+          </div>
+        </div>
+        <div class="list-time">
+          <p class="list-time-type daily btn">Daily</p>
+          <p class="list-time-type weekly btn active">Weekly</p>
+          <p class="list-time-type monthly btn">Monthly</p>
+        </div>
+      </div>
+      <!-- activity -->
+      <div class="activities">
+        <!-- Work -->
+        <div class="work-time activities-time grid-item">
+          <div class="time-tracking-info">
+            <div class="blackground"></div>
+            <div class="head-activity-ellipsis">
+              <p class="head-activity">Work</p>
+              <div class="ellipsis">
+                <svg
+                  width="21"
+                  height="5"
+                  viewBox="0 0 21 5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="time-last-week">
+              <p class="time-work">32hrs</p>
+              <p class="last-week-work">Last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+        <!-- Play -->
+        <div class="play-time activities-time grid-item">
+          <div class="time-tracking-info">
+            <div class="blackground"></div>
+            <div class="head-activity-ellipsis">
+              <p class="head-activity">Play</p>
+              <div class="ellipsis">
+                <svg
+                  width="21"
+                  height="5"
+                  viewBox="0 0 21 5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="time-last-week">
+              <p class="time-play">10hrs</p>
+              <p class="last-week-play">Last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study -->
+        <div class="study-time activities-time grid-item">
+          <div class="time-tracking-info">
+            <div class="blackground"></div>
+            <div class="head-activity-ellipsis">
+              <p class="head-activity">Study</p>
+              <div class="ellipsis">
+                <svg
+                  width="21"
+                  height="5"
+                  viewBox="0 0 21 5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="time-last-week">
+              <p class="time-study">4hrs</p>
+              <p class="last-week-study">Last Week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise -->
+        <div class="exercise-time activities-time grid-item">
+          <div class="time-tracking-info">
+            <div class="blackground"></div>
+            <div class="head-activity-ellipsis">
+              <p class="head-activity">Exercise</p>
+              <div class="ellipsis">
+                <svg
+                  width="21"
+                  height="5"
+                  viewBox="0 0 21 5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="time-last-week">
+              <p class="time-exercise">4hrs</p>
+              <p class="last-week-exercise">Last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+        <!-- Social -->
+        <div class="social-time activities-time grid-item">
+          <div class="time-tracking-info">
+            <div class="blackground"></div>
+            <div class="head-activity-ellipsis">
+              <p class="head-activity">Social</p>
+              <div class="ellipsis">
+                <svg
+                  width="21"
+                  height="5"
+                  viewBox="0 0 21 5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="time-last-week">
+              <p class="time-social">5hrs</p>
+              <p class="last-week-social">Last Week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+        <!-- Self Care -->
+        <div class="self-care-time activities-time grid-item">
+          <div class="time-tracking-info">
+            <div class="blackground"></div>
+            <div class="head-activity-ellipsis">
+              <p class="head-activity">Self Care</p>
+              <div class="ellipsis">
+                <svg
+                  width="21"
+                  height="5"
+                  viewBox="0 0 21 5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="time-last-week">
+              <p class="time-self-care">2hrs</p>
+              <p class="last-week-self-care">Last Week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
