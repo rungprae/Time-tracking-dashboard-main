@@ -319,6 +319,7 @@ body {
   .profile-name {
     font-size: 30px;
     margin-top: 10px;
+    padding-right: 30px;
   }
   .lastname-firstname {
     display: flex;
